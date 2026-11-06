@@ -4,6 +4,8 @@ A small React and TypeScript app that shows property managers which recurring ma
 
 **Running copy:** https://maintenance-calendar-nine.vercel.app
 
+**Demo video (1 minute, narrated, with captions):** https://maintenance-calendar-nine.vercel.app/#demo, or the **Watch the 1-minute demo** button under the page title. It loads only when opened, so it costs the page nothing.
+
 ![The schedule as of November 7, 2026](docs/screenshot.png)
 
 ## Run it
@@ -69,7 +71,7 @@ src/
   lib/schedule.ts       next due date and status
   lib/filters.ts        filters, counts and grouping by property
   lib/format.ts         dates and labels for display
-  components/           the toolbar, the table and the undo message
+  components/           the toolbar, the table, the undo message and the demo video
 ```
 
 The tests sit next to the code (`*.test.ts`). They check every sample item's due date against values worked out by hand, the month-end and leap-year cases, the CSV checks, and the whole Mark done, Undo, filter and sort flow in the page, keyboard focus included. The page tests use a small data set of their own (`src/test/fixtures.ts`), so editing the sample CSV files or the 30-day setting doesn't break them. They run on US Eastern time, where the properties are, so a date that slips to the day before in the US fails them.

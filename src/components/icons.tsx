@@ -38,6 +38,17 @@ export function CloseIcon(props: IconProps) {
   )
 }
 
+export function PlayIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path
+        d="M9 7.2v9.6a.6.6 0 0 0 .9.5l7.6-4.8a.6.6 0 0 0 0-1L9.9 6.7a.6.6 0 0 0-.9.5Z"
+        fill="currentColor"
+      />
+    </Icon>
+  )
+}
+
 export function CalendarCheckIcon(props: IconProps) {
   return (
     <Icon {...props}>

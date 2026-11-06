@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
+import { DemoVideo } from './components/DemoVideo'
 import { CalendarCheckIcon } from './components/icons'
 import { MaintenanceTable } from './components/MaintenanceTable'
 import { rowActionId } from './components/rowFocus'
@@ -71,6 +72,7 @@ export function App({ portfolio, today: todayOnLoad }: AppProps) {
               {plural(portfolio.properties.length, 'property', 'properties')} ·{' '}
               {plural(items.length, 'recurring task')}
             </p>
+            <DemoVideo />
           </div>
         </div>
         <p className="today">
