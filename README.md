@@ -2,6 +2,8 @@
 
 A small React and TypeScript app that shows property managers which recurring maintenance is coming due at each property, and what is already late.
 
+**Running copy:** https://maintenance-calendar-nine.vercel.app
+
 ![The schedule as of November 7, 2026](docs/screenshot.png)
 
 ## Run it
